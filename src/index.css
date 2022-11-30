@@ -1,13 +1,169 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  font-family: Inter, sans-serif;
+  background: #D0B59A;
+
+  /* positioning */
+  margin: 30px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Photo */
+.Photo{
+  /* positioning */
+  height:720px;
+}
+
+.photo--image{
+  border-radius: 20px 20px 0 0;
+ 
+  /* positioning */
+  height: 100%;
+  width: 100%;
+}
+
+/* Main */
+main{
+  background: #1A1B21;
+  color: #FFFFFF;
+  
+  /* positioning */
+  text-align: center;
+  height: 800px;
+  width: 100%;
+}
+.main--name{
+  font-size: 39px;
+  font-weight: 700;
+  line-height: 58px;
+
+  /* positioning */
+  margin: 0;
+  padding-top: 5%;
+}
+.main--job_title{
+  font-size: 30px;
+  font-weight: 400;
+  color:#F3BF99;
+
+  /* positioning */
+  margin:0;
+  padding-top: 1.5%;
+}
+.main--website{
+  font-size: 25px;
+  font-weight: 400;
+  
+  /* positioning */
+  margin:0;
+  padding-top: 2.2%;
+}
+main > a > button {
+  border-radius: 12px;
+  font-size: 25px;
+  font-weight: 500;
+
+  /* positioning */
+  width: 23.5%;
+  height: 70px;
+}
+.main--button_email{
+  background: #FFFFFF;
+  border: 2px solid #D1D5DB;
+  /* box-shadow: 0px 0.2px 0.4px rgba(0, 0, 0, 0.05); */
+  /* box-sizing: border-box; */
+  background-image: url(./images/Mail.png);
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position-y: center;
+  background-position-x: 11%;
+
+  /* positioning */
+  margin-top: 28px;
+  padding-left: 7%;
+}
+.main--button_linkedin{
+  background: #5093E2;
+  color: #FFFFFF;
+  /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05); */
+  background-image: url(./images/linkedin.png);
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position-y: center;
+  background-position-x: 11%;
+
+  /* positioning */
+  margin-top: 28px;
+  padding-left: 7%;
+  margin-left: 3.5%;
+}
+
+
+/* Details */
+.details{
+  color: #F5F5F5;
+  text-align: left;
+  
+  /* positioning */
+  width: 600px;
+  margin:auto;
+  margin-top: 8%;
+}
+.details > h1{
+  font-size: 39px;
+  line-height: 36px;
+
+  /* positioning */
+  margin: 2%;
+}
+.details > p1{
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.details > .details--interests{
+  /* positioning */
+  margin-top:8%;
+}
+
+
+/* Footer */
+footer{
+  background: #161619;
+  border-radius: 0px 0px 40px 40px;
+
+  /* positioning */
+  height: 150px;
+  width: 100%;
+}
+.footer--container{
+  /* positioning */
+  width:55%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+footer > .footer--container> a > img {
+  /* positioning */
+  width: 50px;
+  height: 50px;
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+
+@media only screen and (min-width:990px){
+  .Photo{
+    /* positioning */
+    height:800px;
+    width: 1050px;
+    margin: 0 auto;
+  }
+  main{
+    /* positioning */
+    width:1050px;
+    margin: 0 auto;
+  }
+  footer{
+    height: 130px;
+    width: 1050px;
+    margin:auto;
+  }
 }
